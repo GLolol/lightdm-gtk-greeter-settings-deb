@@ -1,0 +1,2 @@
+version=3
+https://launchpad.net/lightdm-gtk-greeter-settings/+download .*/lightdm-gtk-greeter-settings-([0-9.]+)\.tar\.gz

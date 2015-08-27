@@ -1,0 +1,30 @@
+lightdm-gtk-greeter-settings (1.2.0-1) unstable; urgency=medium
+
+  * Initial Debian release, imported from Ubuntu. (Closes: #788614)
+  * debian/ folder changes:
+    - Add a watch file pointing to Launchpad.
+    - Write a manpage (lightdm-gtk-greeter-settings.1), dropping
+      the binary-without-manpage lintian override
+      for /usr/bin/lightdm-gtk-greeter-settings.
+    - Add a get-orig-source target for debian/rules.
+    - Set myself as maintainer.
+    - Set package source/format to 3.0 quilt.
+    - debian/links: symlink the root NEWS file as an upstream changelog.
+      This fixes the no-upstream-changelog Lintian pedantic warning.
+    - debian/rules: override dh_auto_clean to remove
+      po/lightdm-gtk-greeter-settings.pot, so that successive builds work.
+
+ -- James Lu <glolol1@hotmail.com>  Fri, 26 Jun 2015 15:45:02 -0700
+
+lightdm-gtk-greeter-settings (1.2.0-0ubuntu1) wily; urgency=medium
+
+  * New upstream release.
+
+ -- Sean Davis <smd.seandavis@gmail.com>  Tue, 16 Jun 2015 19:26:28 -0400
+
+lightdm-gtk-greeter-settings (1.1.0-0ubuntu1) vivid; urgency=low
+
+  [ Sean Davis ]
+  * Initial release (LP: #1295405)
+
+ -- Sean Davis <smd.seandavis@gmail.com>  Mon, 16 Feb 2015 06:56:14 -0500
