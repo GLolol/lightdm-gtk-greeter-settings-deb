@@ -7,6 +7,8 @@ Build-Depends: debhelper (>= 9), python3,
 X-Python3-Version: >= 3.0
 Standards-Version: 3.9.6
 Homepage: https://launchpad.net/lightdm-gtk-greeter-settings
+Vcs-Git: git://anonscm.debian.org/collab-maint/lightdm-gtk-greeter-settings.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/lightdm-gtk-greeter-settings.git
 
 Package: lightdm-gtk-greeter-settings
 Architecture: all
