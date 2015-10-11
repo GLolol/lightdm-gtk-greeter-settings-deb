@@ -1,3 +1,6 @@
 # Upstream installs their changelog as NEWS, not CHANGELOG
 # This squashes the no-upstream-changelog Lintian pedantic warning.
 usr/share/doc/lightdm-gtk-greeter-settings/NEWS.gz usr/share/doc/lightdm-gtk-greeter-settings/changelog.gz
+
+# Fixes binary-without-manpage warning for /usr/bin/lightdm-gtk-greeter-settings-pkexec
+usr/share/man/man8/lightdm-gtk-greeter-settings.8.gz usr/share/man/man8/lightdm-gtk-greeter-settings-pkexec.8.gz

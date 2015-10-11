@@ -1,26 +1,27 @@
 Source: lightdm-gtk-greeter-settings
 Section: utils
 Priority: optional
-Maintainer: James Lu <glolol1@hotmail.com>
-Build-Depends: debhelper (>= 9), python3, 
+Maintainer: James Lu <bitflip3@gmail.com>
+Build-Depends: debhelper (>= 9), python3,
  python3-distutils-extra (>= 2.18), python-gi-dev
 X-Python3-Version: >= 3.0
 Standards-Version: 3.9.6
 Homepage: https://launchpad.net/lightdm-gtk-greeter-settings
 Vcs-Git: git://anonscm.debian.org/collab-maint/lightdm-gtk-greeter-settings.git
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/lightdm-gtk-greeter-settings.git
+Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/lightdm-gtk-greeter-settings.git/
 
 Package: lightdm-gtk-greeter-settings
 Architecture: all
-Depends: ${python3:Depends}, 
+Depends: ${python3:Depends},
          ${misc:Depends},
          python3-gi (>= 3.0),
          gir1.2-gtk-3.0,
          gir1.2-glib-2.0,
          gir1.2-gdkpixbuf-2.0,
-         lightdm-gtk-greeter
+         lightdm-gtk-greeter,
+         gir1.2-pango-1.0
 Recommends: policykit-1 | gksu
-Description: Settings editor for LightDM Gtk+ Greeter
- A simple configuration utility for the LightDM Gtk+ Greeter.
+Description: settings editor for the LightDM GTK+ Greeter
+ A simple configuration utility for the LightDM GTK+ Greeter.
  All configuration options available in the greeter are
  exposed and easily manipulated using this tool.

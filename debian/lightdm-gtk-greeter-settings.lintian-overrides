@@ -1,2 +1,0 @@
-# There is already a manual page for the main lightdm-gtk-greeter-settings app, and many other *-pkexec binaries in Debian don't have manpages either.
-lightdm-gtk-greeter-settings: binary-without-manpage usr/bin/lightdm-gtk-greeter-settings-pkexec

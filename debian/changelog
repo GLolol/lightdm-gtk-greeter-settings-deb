@@ -6,15 +6,15 @@ lightdm-gtk-greeter-settings (1.2.0-1) unstable; urgency=medium
     - Write a manpage (lightdm-gtk-greeter-settings.1), dropping
       the binary-without-manpage lintian override
       for /usr/bin/lightdm-gtk-greeter-settings.
-    - Add a get-orig-source target for debian/rules.
     - Set myself as maintainer.
     - Set package source/format to 3.0 quilt.
-    - debian/links: symlink the root NEWS file as an upstream changelog.
+    - links: symlink the root NEWS file as an upstream changelog.
       This fixes the no-upstream-changelog Lintian pedantic warning.
-    - debian/rules: override dh_auto_clean to remove
+    - rules: override dh_auto_clean to remove
       po/lightdm-gtk-greeter-settings.pot, so that successive builds work.
+    - control: add dependency on gir1.2-pango-1.0
 
- -- James Lu <glolol1@hotmail.com>  Fri, 26 Jun 2015 15:45:02 -0700
+ -- James Lu <bitflip3@gmail.com>  Sat, 10 Oct 2015 22:20:50 -0700
 
 lightdm-gtk-greeter-settings (1.2.0-0ubuntu1) wily; urgency=medium
 
