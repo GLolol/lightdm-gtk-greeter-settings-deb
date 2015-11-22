@@ -1,9 +1,9 @@
-lightdm-gtk-greeter-settings (1.2.0-2~) UNRELEASED; urgency=medium
+lightdm-gtk-greeter-settings (1.2.0-2) unstable; urgency=medium
 
   * Attempt to make package build reproducibly. (Closes: #804081)
-  * Set section to x11, not utils.
+  * Set package section to x11, not utils.
 
- -- James Lu <bitflip3@gmail.com>  Fri, 06 Nov 2015 18:23:13 -0800
+ -- James Lu <bitflip3@gmail.com>  Sun, 22 Nov 2015 10:43:11 -0800
 
 lightdm-gtk-greeter-settings (1.2.0-1) unstable; urgency=medium
 
