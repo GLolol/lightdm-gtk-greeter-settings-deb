@@ -1,7 +1,7 @@
 Subject: Patch setup.py to create installation config reproducibly
 Author: James Lu <bitflip3@gmail.com>
-Forwarded: no
-Last-Update: 2016-01-10
+Forwarded: https://code.launchpad.net/~glolol/lightdm-gtk-greeter-settings/reproducible-build/+merge/292095
+Last-Update: 2016-04-17
 Bug-Debian: http://bugs.debian.org/804081
 
 Index: lightdm-gtk-greeter-settings-1.2.0/setup.py
