@@ -1,0 +1,16 @@
+Subject: Work around bashism in lightdm-gtk-greeter-settings-pkexec causing a crash if -s is given
+Author: James Lu <bitflip3@gmail.com>
+Forwarded: https://code.launchpad.net/~tacocat/lightdm-gtk-greeter-settings/fix-pkexec-shebang/+merge/304321
+Last-Update: 2016-11-26
+Bug: https://bugs.launchpad.net/ubuntu/+source/lightdm-gtk-greeter-settings/+bug/1613967
+
+Index: lightdm-gtk-greeter-settings/bin/lightdm-gtk-greeter-settings-pkexec
+===================================================================
+--- lightdm-gtk-greeter-settings.orig/bin/lightdm-gtk-greeter-settings-pkexec	2016-11-26 12:51:20.105648723 -0800
++++ lightdm-gtk-greeter-settings/bin/lightdm-gtk-greeter-settings-pkexec	2016-11-26 12:51:48.753154350 -0800
+@@ -1,4 +1,4 @@
+-#!/bin/sh
++#!/bin/bash
+ 
+ APP_PATH="/usr/bin/lightdm-gtk-greeter-settings"
+ 
