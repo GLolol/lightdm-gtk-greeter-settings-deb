@@ -3,7 +3,7 @@ Section: x11
 Priority: optional
 Maintainer: James Lu <bitflip3@gmail.com>
 Build-Depends: debhelper (>= 9), python3,
- python3-distutils-extra (>= 2.18), python-gi-dev
+ python3-distutils-extra (>= 2.18), python3-gi-dev
 X-Python3-Version: >= 3.0
 Standards-Version: 3.9.8
 Homepage: https://launchpad.net/lightdm-gtk-greeter-settings

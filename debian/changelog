@@ -3,6 +3,7 @@ lightdm-gtk-greeter-settings (1.2.1-2) unstable; urgency=medium
   * Add patch fix-pkexec-shebang.patch to work around bashism in
     lightdm-gtk-greeter-settings-pkexec causing a crash if -s is given
     (LP: #1613967)
+  * d/control: build-dep on python3-gi-dev, not python-gi-dev
 
  -- James Lu <bitflip3@gmail.com>  Sun, 11 Dec 2016 13:51:21 -0800
 
