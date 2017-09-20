@@ -171,6 +171,13 @@ def set_image_from_path(image, path):
 def check_path_accessibility(path, file=True, executable=False):
     """Return None  if file is readable by greeter and error message otherwise"""
 
+    # LP: #1709864, Support gtk-3.* themes
+    if "gtk-3.*" in path:
+        for x in range(0, 40):
+            if os.path.exists(path.replace("gtk-3.*", "gtk-3.%i" % x)):
+                path = path.replace("gtk-3.*", "gtk-3.%i" % x)
+                return check_path_accessibility(path, file, executable)
+
     if not os.path.exists(path):
         return _('File not found: {path}').format(path=path)
 
@@ -202,12 +209,12 @@ def check_path_accessibility(path, file=True, executable=False):
             return _('Directory is not readable: {path}'.format(path=p))
         if st.st_uid == uid:
             return not (st.st_mode & stat.S_IRUSR) and \
-                _('LightDM do not have permissions to read path: {path}'.format(path=p))
+                _('LightDM does not have permissions to read path: {path}'.format(path=p))
         if st.st_gid in gids:
             return not (st.st_mode & stat.S_IRGRP) and \
-                _('LightDM do not have permissions to read path: {path}'.format(path=p))
+                _('LightDM does not have permissions to read path: {path}'.format(path=p))
         return not (st.st_mode & stat.S_IROTH) and \
-            _('LightDM do not have permissions to read path: {path}'.format(path=p))
+            _('LightDM does not have permissions to read path: {path}'.format(path=p))
 
     errors = (check(p) for p in accumulate(parts, os.path.join))
     error = next((error for error in errors if error), None)
@@ -219,14 +226,14 @@ def check_path_accessibility(path, file=True, executable=False):
         st = os.stat(path)
         if st.st_uid == uid:
             if not st.st_mode & stat.S_IXUSR:
-                return _('LightDM do not have permissions to execute file: {path}'
+                return _('LightDM does not have permissions to execute file: {path}'
                          .format(path=path))
         elif st.st_gid in gids:
             if not st.st_mode & stat.S_IXGRP:
-                return _('LightDM do not have permissions to execute file: {path}'
+                return _('LightDM does not have permissions to execute file: {path}'
                          .format(path=path))
         elif not st.st_mode & stat.S_IXOTH:
-            return _('LightDM do not have permissions to execute file: {path}'.format(path=path))
+            return _('LightDM does not have permissions to execute file: {path}'.format(path=path))
 
     return error
 

@@ -34,8 +34,8 @@ def write_config(libdir, values):
         libdir, 'lightdm_gtk_greeter_settings/installation_config.py')
     try:
         f = open(filename, 'w')
-        f.write('__all__ = [%s]\n' % ', '.join('"%s"' % k for k in values))
-        for k, v in values.items():
+        f.write('__all__ = [%s]\n' % ', '.join('"%s"' % k for k in sorted(values)))
+        for k, v in sorted(values.items()):
             f.write('%s = %s\n' % (k, v))
     except OSError as e:
         print("ERROR: Can't write installation config: %s" % e)
@@ -87,7 +87,7 @@ class InstallAndUpdateDataDirectory(DistUtilsExtra.auto.install_auto):
 
 DistUtilsExtra.auto.setup(
     name='lightdm-gtk-greeter-settings',
-    version='1.2.1',
+    version='1.2.2',
     license='GPL-3',
     author='Andrew P.',
     author_email='pan.pav.7c5@gmail.com',
