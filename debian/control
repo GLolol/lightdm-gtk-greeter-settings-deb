@@ -3,8 +3,10 @@ Section: x11
 Priority: optional
 Maintainer: James Lu <bitflip3@gmail.com>
 # Note: python-gi-dev is not a typo; the package provides both Python 2 and 3 bindings
-Build-Depends: debhelper (>= 9), python3,
- python3-distutils-extra (>= 2.18), python-gi-dev
+Build-Depends: debhelper (>= 9),
+               python-gi-dev,
+               python3,
+               python3-distutils-extra (>= 2.18),
 X-Python3-Version: >= 3.0
 Standards-Version: 3.9.8
 Homepage: https://launchpad.net/lightdm-gtk-greeter-settings
