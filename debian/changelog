@@ -3,6 +3,7 @@ lightdm-gtk-greeter-settings (1.2.2-1) unstable; urgency=medium
   * New upstream release.
   * patches: drop, applied upstream.
   * Bump standards version to 4.1.0, no changes needed.
+  * Remove alternate recommends on gksu. Closes: #885547
 
  -- James Lu <bitflip3@gmail.com>  Wed, 20 Sep 2017 16:37:47 -0700
 

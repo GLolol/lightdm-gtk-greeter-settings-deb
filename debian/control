@@ -23,7 +23,7 @@ Depends: ${python3:Depends},
          gir1.2-gdkpixbuf-2.0,
          lightdm-gtk-greeter,
          gir1.2-pango-1.0
-Recommends: policykit-1 | gksu
+Recommends: policykit-1
 Description: settings editor for the LightDM GTK+ Greeter
  A simple configuration utility for the LightDM GTK+ Greeter. All configuration
  options available in the greeter are exposed and easily manipulated using
