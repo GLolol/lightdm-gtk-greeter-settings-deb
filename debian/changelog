@@ -3,6 +3,7 @@ lightdm-gtk-greeter-settings (1.2.2-2) UNRELEASED; urgency=medium
   * d/control,copyright,l-g-g-s.1: update email and copyright years
   * Move Vcs-* links to Salsa.
   * Add missing build-dep on dh-python. Closes: #896731
+  * Bump standards version to 4.1.4, no changes needed.
 
  -- James Lu <james@overdrivenetworks.com>  Tue, 24 Apr 2018 00:46:39 -0700
 
