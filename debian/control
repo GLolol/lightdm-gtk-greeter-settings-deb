@@ -1,7 +1,7 @@
 Source: lightdm-gtk-greeter-settings
 Section: x11
 Priority: optional
-Maintainer: James Lu <bitflip3@gmail.com>
+Maintainer: James Lu <james@overdrivenetworks.com>
 # Note: python-gi-dev is not a typo; the package provides both Python 2 and 3 bindings
 Build-Depends: debhelper (>= 9),
                python-gi-dev,
